@@ -109,14 +109,10 @@ function LoadItems(index, range) {
     }
 }
 
-// document.onload = () => {
-// };
 speakerGroup.innerHTML = '';
 LoadItems(0, speakers.length);
 
 seeMore.addEventListener('click', () => {
-    // LoadItems(3, speakers.length);
-
     speakerGroup.classList.toggle('speaker-group');
     seeMore.classList.toggle('hidden');
 });

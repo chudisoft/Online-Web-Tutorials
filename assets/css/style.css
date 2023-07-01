@@ -40,7 +40,7 @@ body {
 .modal-container {
   flex-wrap: wrap;
   background-color: #fff;
-  color: #000;
+  color: #272a31;
   padding: 1em;
   border-radius: 1em;
   height: 90vh;
@@ -81,13 +81,6 @@ button {
   border-radius: 0.5em;
   transition: transform 1s;
 }
-
-/*
-button:enabled {
-  border: 0.1em solid #7f8cff;
-  background: #fff;
-  color: #6070ff;
-} */
 
 button:hover {
   background: #6070ff;
@@ -228,7 +221,7 @@ main {
 }
 
 .speaker-block:hover {
-  border: #000 1px solid;
+  border: #272a31 1px solid;
   padding: 1em;
   border-radius: 1em;
 }
@@ -267,10 +260,10 @@ main {
 }
 
 .see-more-speakers > button {
-  box-shadow: 2px 2px 4px 0 #00000040;
-  border: 1px solid #dcdcdc;
+  box-shadow: 2px 2px 4px 0 #d3d3d3;
+  border: 1px solid #d3d3d3;
   background-color: #fff;
-  color: #000;
+  color: #272a31;
   border-radius: 4px;
   width: 100%;
   padding: 1em;
@@ -297,7 +290,7 @@ main {
 }
 
 .warning {
-  color: #ac0b0b;
+  color: #ec5242;
   font-size: larger;
 }
 
@@ -308,7 +301,7 @@ main {
   line-height: 17px;
   letter-spacing: -0.01em;
   text-align: left;
-  color: #515151;
+  color: #272a31;
   border: solid #fff 2px;
   padding: 1em;
   margin: 2em 0;
@@ -321,9 +314,7 @@ main {
   line-height: 36px;
   letter-spacing: -0.01em;
   text-align: left;
-  color: #000;
-
-  /* padding: 1em; */
+  color: #272a31;
   margin: 0.5em 0;
 }
 
@@ -334,7 +325,7 @@ main {
   line-height: 36px;
   letter-spacing: -0.01em;
   text-align: left;
-  color: #515151;
+  color: #272a31;
 }
 
 #program {
@@ -373,7 +364,7 @@ main {
 }
 
 .program-grid > div > h5 {
-  color: #ff5438;
+  color: #ec5242;
   font-family: Lato, serif;
   font-size: 14px;
   font-weight: 700;
@@ -433,7 +424,7 @@ main {
 }
 
 .text-red {
-  color: #f78c89;
+  color: #ec5242;
   font-family: Lato, serif;
   font-size: 15px;
   font-weight: 700;
@@ -452,7 +443,7 @@ main {
 }
 
 .join {
-  background: #ff4f38;
+  background: #ec5242;
   color: #fff;
   padding: 2em;
   margin: 2em 0;
@@ -516,8 +507,8 @@ footer {
 .mx-3 {
   width: 3em;
   margin: 0.5em auto 0 auto;
-  background: #a04038;
-  border-color: #a04038;
+  background: #ec5242;
+  border-color: #ec5242;
 }
 
 .mb-2 {

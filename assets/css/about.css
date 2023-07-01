@@ -15,7 +15,7 @@
 
 #welcome h1 {
   font-family: 'Cocogoose', sans-serif;
-  color: #ff5438;
+  color: #ec5242;
   text-align: center;
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
@@ -41,7 +41,7 @@
   letter-spacing: 0.03em;
   text-align: center;
   padding: 1em;
-  color: #7a7a7a;
+  color: #272a31;
 }
 
 .brief-about-email {
@@ -51,7 +51,7 @@
   line-height: 25px;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #5f5f5f;
+  color: #272a31;
 }
 
 .theme-img {
@@ -70,7 +70,7 @@
   line-height: 28px;
   letter-spacing: -0.03em;
   text-align: left;
-  color: #2c2c2c;
+  color: #272a31;
 }
 
 .past > p {
@@ -80,7 +80,7 @@
   line-height: 21px;
   letter-spacing: -0.03em;
   text-align: center;
-  color: #838383;
+  color: #272a31;
 }
 
 #about > p {
@@ -90,13 +90,13 @@
   line-height: 21px;
   letter-spacing: -0.03em;
   text-align: center;
-  color: #838383;
+  color: #272a31;
   padding: 2em 0;
 }
 
 .about-logo {
   padding: 2em 20%;
-  border: solid 1px #f0f0f0;
+  border: solid 1px #d3d3d3;
 }
 
 #past {
@@ -128,7 +128,7 @@ img {
   line-height: 13px;
   letter-spacing: -0.01em;
   text-align: left;
-  color: #3b3e45;
+  color: #272a31;
 }
 
 @media only screen and (min-width: 768px) {
@@ -137,15 +137,19 @@ img {
   }
 
   footer {
-    color: #fff;
-    background-color: #2e2e2e;
+    color: #d3d3d3;
+    background-color: #272a31;
   }
 
   .copywrite {
-    color: #fff;
+    color: #d3d3d3;
   }
 
   #welcome {
     background: url('../images/backgrounds/about_bg_01.png');
+  }
+
+  .mx-m-45 {
+    max-width: 45%;
   }
 }
