@@ -3,7 +3,7 @@
   <img src="assets/images/logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Portfolio Microverse Project</b></h3>
+  <h3><b>First Capstone Project For Microverse</b></h3>
 
 </div>
 
@@ -36,11 +36,11 @@
 
 # 📖 [Uduekwe Christopher Chukwudi] <a name="about-project"></a>
 
-> This project was created as part of Microverse week one tasks.
+> This project was created as part of Microverse week 5 tasks.
 It gives the student an opportunity to play around with HTML, CSS, and Github.
 It also allows the student to showcase what they can do to the future employee.
 
-**[Portfolio Microverse]** is a portfolio website
+**[Online Web Tutorial Portal]** is a Online Web Tutorial Portal.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -81,17 +81,17 @@ It also allows the student to showcase what they can do to the future employee.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> This Project is deployed at https://chudisoft.github.io/Portfolio-Microverse/
+> This Project is deployed at https://chudisoft.github.io/Online-Web-Tutorials
 
 <!-- - [Live Demo Link](https://google.com) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Project Presentation -->
-
+<!-- 
 ## 🚀 Project Presentation <a name="project-presentation"></a>
 
-> Feel free to watch the project presentation at [loom](https://www.loom.com/share/a676e26753bc42259b94e2797629015e)
+> Feel free to watch the project presentation at [loom](https://www.loom.com/share/a676e26753bc42259b94e2797629015e) -->
 
 <!-- - [Loom](https://www.loom.com/share/a676e26753bc42259b94e2797629015e) -->
 
@@ -113,8 +113,8 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:chudisoft/portfolio-microverse.git
-  cd portfolio-microverse
+  git clone git@github.com:chudisoft/online-web-tutorials.git
+  cd online-web-tutorials
   code .
 ```
 -
@@ -193,7 +193,11 @@ follow me for update.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse for this __wonderful__ opportunity.
+I would like to thank [microverse](https://microverse.org) for this __wonderful__ opportunity.
+
+I would also like to thank [Lato](https://www.latofonts.com/) for the opportunity to use their fonts.
+
+I would also like to thank [Cindy Shin in Behance](https://www.behance.net/adagio07) for the opportunity to use their design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -1,18 +1,12 @@
-// const body = document.querySelector('body');
-const contactForm = document.querySelector('.contact-form');
 const navButton = document.querySelector('.menubar');
+const seeMore = document.querySelector('.see-more');
+const speakerGroup = document.querySelector('.speaker-group');
 const navList = document.querySelector('.nav-items');
 const navClose = document.querySelector('#nav-close');
-const yearLabel = document.querySelector('#year-label');
-const client = document.querySelector('#client');
-const role = document.querySelector('#role');
-const seeProjectBtn1 = document.querySelector('#see-project-btn-1');
-const seeProjectBtn2 = document.querySelector('#see-project-btn-2');
-const seeProjectBtn3 = document.querySelector('#see-project-btn-3');
-const seeProjectBtn4 = document.querySelector('#see-project-btn-4');
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal-close');
 const menuitems = Array.from(document.querySelectorAll('.menu-items'));
+
 document.onkeydown = function (evt) {
     evt = evt || window.event;
     let isEscape = false;
@@ -25,145 +19,104 @@ document.onkeydown = function (evt) {
         modal.classList.toggle('show');
     }
 };
+
 navButton.addEventListener('click', () => {
     navList.classList.toggle('show');
 });
+
 navClose.addEventListener('click', () => {
     navList.classList.toggle('show');
 });
+
 menuitems.forEach((item) => {
     item.addEventListener('click', () => {
         navList.classList.remove('show');
     });
 });
+
 modalClose.addEventListener('click', () => {
     modal.classList.toggle('show');
 });
-const projects = [
+
+const speakers = [
     {
-        name: 'Tonic',
-        description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio1.png',
-        tech: ['HTML', 'CSS', 'JavaScript'],
-        client: 'CANOPY',
-        role: 'Back End Dev',
-        year: '2015',
-        link: '#',
-        source: '#',
+        name: 'Yochai Benkler',
+        description1: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School.',
+        description2: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006.',
+        featuredImage: 'assets/images/Speakers/speaker_01.png',
     },
     {
-        name: 'Multi-Post Stories',
-        description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio2.png',
-        tech: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
-        link: '#',
-        source: '#',
-        client: 'FACEBOOK',
-        role: 'Full Stack Dev',
-        year: '',
+        name: 'Kilnam Chon',
+        description1: '',
+        description2: 'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame.',
+        featuredImage: 'assets/images/Speakers/speaker_02.png',
     },
     {
-        name: 'Facebook 360',
-        description: 'Exploring the future of media in Facebook\'s first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio3.png',
-        tech: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
-        link: '#',
-        source: '#',
-        client: 'FACEBOOK',
-        role: 'Full Stack Dev',
-        year: '2015',
+        name: 'SohYeong Noh',
+        description1: 'Director of Art Centre Nabi and a board member of CC Korea.',
+        description2: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.',
+        featuredImage: 'assets/images/Speakers/speaker_03.png',
     },
     {
-        name: 'Uber Navigation',
-        description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-        featuredImage: 'assets/images/samples/desktop/Snapshoot-Portfolio4.png',
-        tech: ['HTML', 'Ruby on rails', 'CSS', 'JavaScript'],
-        link: '#',
-        source: '#',
-        client: 'Uber',
-        role: 'Lead Developer',
-        year: '2018',
+        name: 'Julia Leda',
+        description1: 'President of Young Pirates of Europe.',
+        description2: 'European ingetration, political democracy and participation of youth through online as her major condern, Reda’s report outlining potential changes to EU copyright law was approved by the Parliament in July.',
+        featuredImage: 'assets/images/Speakers/speaker_04.png',
+    },
+    {
+        name: 'Lila tretikov',
+        description1: 'Executive Director of the Wikimedia Foundation.',
+        description2: 'Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world every month.',
+        featuredImage: 'assets/images/Speakers/speaker_05.png',
+    },
+    {
+        name: 'Ryan Merkley',
+        description1: 'CEO of Creativve Commons, ex COO of the Mozilla Foundation.',
+        description2: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open-source move-ment.',
+        featuredImage: 'assets/images/Speakers/speaker_06.png',
     },
 ];
-function ShowModal(index) {
-    modal.classList.toggle('show');
-    const modalHeader = document.querySelector('#modal-header');
-    const workSampleImage = document.querySelector('#work-sample-image');
-    const workDescription = document.querySelector('#work-description');
-    const techList = document.querySelector('#tech-list');
-    const btnSeeLive = document.querySelector('#btn-see-live');
-    const btnSeeSource = document.querySelector('#btn-see-source');
-    const project = projects[index];
-    modalHeader.textContent = project.name;
-    workSampleImage.setAttribute('src', project.featuredImage);
-    workDescription.textContent = project.description;
-    btnSeeLive.setAttribute('href', project.link);
-    btnSeeSource.setAttribute('href', project.source);
-    techList.innerHTML = '';
-    project.tech.forEach((tech) => {
-        const li = document.createElement('li');
-        const span = document.createElement('span');
-        span.innerText = tech;
-        li.appendChild(span);
-        techList.appendChild(li);
-    });
-    client.textContent = project.client;
-    role.textContent = project.role;
-    yearLabel.textContent = project.year;
-}
-seeProjectBtn1.addEventListener('click', () => {
-    ShowModal(0);
-});
-seeProjectBtn2.addEventListener('click', () => {
-    ShowModal(1);
-});
-seeProjectBtn3.addEventListener('click', () => {
-    ShowModal(2);
-});
-seeProjectBtn4.addEventListener('click', () => {
-    ShowModal(3);
-});
-const email = document.getElementById('email');
-const warning = document.querySelector('.warning');
-const userName = document.querySelector('#name');
-const message = document.querySelector('#message');
-const formDatakey = 'formData';
 
-contactForm.addEventListener('submit', (event) => {
-    if (email.value.toLowerCase() !== email.value) {
-        event.preventDefault();
-        warning.innerText = 'Email must be lower';
-        email.value = email.value.toLowerCase();
+function LoadItems(index, range) {
+    for (; index < range; index += 1) {
+        const element = speakers[index];
+        const div = document.createElement('div');
+        const divImg = document.createElement('divImg');
+        const divDesc = document.createElement('divDesc');
+        const img = document.createElement('img');
+        const h4 = document.createElement('h4');
+        const p1 = document.createElement('p');
+        const p2 = document.createElement('p');
+
+        div.className = 'speaker-block';
+        divImg.className = 'speaker-image';
+        divDesc.className = 'speaker-desc';
+        p1.className = 'text-red';
+
+        img.src = element.featuredImage;
+        img.alt = `${element.name} image`;
+        h4.innerText = element.name;
+        p1.innerText = element.description1;
+        p2.innerText = element.description2;
+
+        divImg.appendChild(img);
+        divDesc.appendChild(h4);
+        divDesc.appendChild(p1);
+        divDesc.appendChild(p2);
+        div.appendChild(divImg);
+        div.appendChild(divDesc);
+        speakerGroup.appendChild(div);
     }
-});
-
-let formObject = {
-  userName: '',
-  email: '',
-  message: '',
-};
-
-function SaveFormData() {
-  formObject.userName = userName.value;
-  formObject.email = email.value;
-  formObject.message = message.value;
-  localStorage.setItem(formDatakey, JSON.stringify(formObject));
 }
 
-email.addEventListener('input', SaveFormData);
-userName.addEventListener('input', SaveFormData);
-message.addEventListener('input', SaveFormData);
+// document.onload = () => {
+// };
+speakerGroup.innerHTML = '';
+LoadItems(0, speakers.length);
 
-contactForm.addEventListener('reset', () => {
-  localStorage.removeItem(formDatakey);
-});
+seeMore.addEventListener('click', () => {
+    // LoadItems(3, speakers.length);
 
-window.addEventListener('load', () => {
-  const dataStored = localStorage.getItem(formDatakey);
-  if (dataStored !== null) {
-    formObject = JSON.parse(dataStored);
-    email.value = formObject.email;
-    userName.value = formObject.userName;
-    message.value = formObject.message;
-  }
+    speakerGroup.classList.toggle('speaker-group');
+    seeMore.classList.toggle('hidden');
 });

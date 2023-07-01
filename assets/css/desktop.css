@@ -1,8 +1,9 @@
 @media only screen and (min-width: 768px) {
   body {
     min-width: 768px !important;
-    background: linear-gradient(0deg, #F8F8F8, #F8F8F8),
-      linear-gradient(0deg, #FFFFFF, #FFFFFF);
+    background:
+      linear-gradient(0deg, #f8f8f8, #f8f8f8),
+      linear-gradient(0deg, #fff, #fff);
   }
 
   .hidden,
@@ -23,12 +24,16 @@
     background: #3e3e3e;
     max-width: 100%;
     padding: 0.3em 10%;
-    font-family: Lato;
+    font-family: Lato, serif;
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
+  }
+
+  .top-nav li img {
+    max-height: 1em;
   }
 
   .menu-icon,
@@ -56,29 +61,33 @@
   .nav-items.show > a {
     padding: 0.5em 5px;
     margin: 0 1em;
-    font-family: Lato;
+    font-family: Lato, serif;
     font-size: 14px;
     font-weight: 800;
     line-height: 17px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: left;
     color: #868686;
     text-decoration: none;
   }
 
-  .nav-items > a.active,
-  .nav-items.show > a.active,
-  .nav-items > a:active,
-  .nav-items.show > a:active {
+  .nav-items > a.active {
     color: #f07f7e;
   }
 
-  .nav-items > a:active,
-  .nav-items.show > a:active {
+  .nav-items > a:active {
     text-decoration: underline;
   }
 
+  .nav-items.show > a.active {
+    color: #f07f7e;
+  }
+
   .nav-items > a:hover {
+    text-decoration: underline;
+  }
+
+  .nav-items.show > a:active {
     text-decoration: underline;
   }
 
@@ -114,7 +123,7 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .header-logo {
     padding: 3px 5px;
   }
@@ -134,8 +143,9 @@
 
   #welcome {
     padding: 5em 10%;
+    background-image: url('../images/backgrounds/main_big.png');
   }
-  
+
   .brief {
     font-size: 25px;
     font-weight: 400;
@@ -152,20 +162,20 @@
     text-align: center;
   }
 
-  .program-grid > div > h5{
+  .program-grid > div > h5 {
     font-size: 24px;
     font-weight: 700;
     line-height: 28px;
     letter-spacing: -0.01em;
   }
-  
+
   .speaker-block > div > h4 {
-    font-family: Lato;
+    font-family: Lato, serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
     letter-spacing: -0.02em;
-    text-align: left;  
+    text-align: left;
   }
 
   .text-red {
@@ -174,27 +184,29 @@
     line-height: 21px;
     letter-spacing: -0.09em;
   }
-  
+
   .speaker-block > div > p {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.05em;
   }
-  
-  #speakers, #partners, #program, footer {
+
+  #speakers,
+  #partners,
+  #program,
+  footer {
     padding: 3em 10%;
   }
-  
+
   .speaker-block {
     max-width: 48%;
   }
-  
+
   .grid-col,
   .speaker-block {
     display: grid;
-    grid-template:
-      'itemImage itemDesc itemDesc itemDesc';
+    grid-template: 'itemImage itemDesc itemDesc itemDesc';
     gap: 1em;
     grid-auto-columns: minmax(0, 1fr);
   }
@@ -207,5 +219,14 @@
     font-size: 14px;
   }
 
+  #welcome h1 {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 5rem;
+  }
 
+  .speaker-group {
+    max-height: unset;
+    overflow-y: auto;
+  }
 }

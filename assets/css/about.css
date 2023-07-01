@@ -1,133 +1,151 @@
 #welcome,
 #about,
 #past {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome {
+  background: url('../images/backgrounds/about_bg_01.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#welcome h1 {
+  font-family: 'Cocogoose', sans-serif;
+  color: #ff5438;
+  text-align: center;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-image: unset;
 }
 
 .brief-about {
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: center;
-    background-color: #fff;
-    padding: 1em;
+  font-family: Lato, serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0;
+  text-align: center;
+  background-color: #fff;
+  padding: 1em;
 }
 
 .brief-about-2 {
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    padding: 1em;
-    color: #7a7a7a;
+  font-family: Lato, serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding: 1em;
+  color: #7a7a7a;
 }
 
 .brief-about-email {
-    font-family: Lato;
-    font-size: 17px;
-    font-weight: 800;
-    line-height: 25px;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #5f5f5f;
+  font-family: Lato, serif;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #5f5f5f;
 }
 
 .theme-img {
-    max-width: 30em;
+  max-width: 30em;
 }
 
 #about {
-    background-color: #fff;
-    padding: 2em 10%;
+  background-color: #fff;
+  padding: 2em 10%;
 }
 
 #about > h2 {
-    font-family: Lato;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: -0.03em;
-    text-align: left;
-    color: #2c2c2c;
-}
-
-#about > p {
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: -0.03em;
-    text-align: center;
-    color: #838383;
-    padding: 2em 0;
-}
-
-.about-logo {
-    padding: 2em 20%;
-    border: solid 1px #f0f0f0;
-}
-
-#past {
-    padding: 2em 10%;
-}
-
-.past {
-    font-family: Lato;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: -0.03em;
-    text-align: left;
-    color: #2c2c2c;
+  font-family: Lato, serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #2c2c2c;
 }
 
 .past > p {
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21px;
-    letter-spacing: -0.03em;
-    text-align: center;
-    color: #838383;
+  font-family: Lato, serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #838383;
+}
+
+#about > p {
+  font-family: Lato, serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #838383;
+  padding: 2em 0;
+}
+
+.about-logo {
+  padding: 2em 20%;
+  border: solid 1px #f0f0f0;
+}
+
+#past {
+  padding: 2em 10%;
+}
+
+.past {
+  font-family: Lato, serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  color: #2c2c2c;
 }
 
 .gap-2 {
-    gap: 0.5em;
+  gap: 0.5em;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .copywrite {
-    font-family: Lato;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 13px;
-    letter-spacing: -0.01em;
-    text-align: left;
-    color: #3b3e45;
+  font-family: Lato, serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 13px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  color: #3b3e45;
 }
 
 @media only screen and (min-width: 768px) {
-    .grid-col-item-desc {
-        margin-left: 2em;
-    }
+  .grid-col-item-desc {
+    margin-left: 2em;
+  }
 
-    footer {
-        color: #fff;
-        background-color: #2e2e2e;
-    }
+  footer {
+    color: #fff;
+    background-color: #2e2e2e;
+  }
 
-    .copywrite {
-        color: #fff;
-    }
+  .copywrite {
+    color: #fff;
+  }
 
+  #welcome {
+    background: url('../images/backgrounds/about_bg_01.png');
+  }
 }
